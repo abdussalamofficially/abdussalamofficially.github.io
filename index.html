@@ -1,0 +1,370 @@
+<!DOCTYPE <!doctype html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+ 
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdus Salam</title>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@400;500;600;700&family=Hind+Siliguri:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700;900&family=Raleway:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --dark-navy: #050c1a; --accent-gold: #c9a84c; --accent-blue: #4a90d9; --text-white: #f0f4ff;
+    --text-muted: #8899bb; --card-bg: rgba(255,255,255,0.04); --border: rgba(255,255,255,0.08); --orange: #e87722;
+  }
+  body.light-mode {
+    --dark-navy: #f4f7f6; --accent-gold: #9a7b2c; --text-white: #1a1a1a; --text-muted: #555555;
+    --card-bg: rgba(0,0,0,0.03); --border: rgba(0,0,0,0.1);
+  }
+  body.light-mode .bg-canvas { background: radial-gradient(ellipse at 20% 20%, #dce6f5 0%, transparent 55%), radial-gradient(ellipse at 80% 80%, #f0e6f5 0%, transparent 55%), #f0f4f8; }
+  body.light-mode .star { display: none; } body.light-mode .orb { opacity: 0.3; }
+  body.light-mode .menu-btn, body.light-mode .lang-switch { background: rgba(255,255,255,0.9); border-color: rgba(0,0,0,0.1); }
+  body.light-mode .menu-btn span { background: var(--accent-gold); } body.light-mode .menu-btn:hover { background: rgba(201,168,76,0.2); }
+  body.light-mode .dropdown-menu { background: rgba(255,255,255,0.98); border-color: rgba(0,0,0,0.1); box-shadow: 0 8px 30px rgba(0,0,0,0.1); }
+  body.light-mode .dropdown-item { color: #1a1a1a; } body.light-mode .dropdown-item:hover { background: rgba(201,168,76,0.1); }
+  body.light-mode .share-btn { background: rgba(255,255,255,0.9); border-color: rgba(0,0,0,0.1); } body.light-mode .share-btn svg { fill: #1a1a1a; }
+  body.light-mode .avatar { border-color: var(--accent-gold); box-shadow: 0 0 0 6px rgba(154,123,44,0.15),0 8px 30px rgba(0,0,0,0.15); }
+  body.light-mode .dot { border-color: #f4f7f6; } body.light-mode .contact-section { background: rgba(0,0,0,0.03); }
+  body.light-mode .site-footer { background: #fff; border-top: 1px solid #eee; } body.light-mode .wa-chat-box { box-shadow: 0 8px 32px rgba(0,0,0,0.1); }
+  body.light-mode .bio { color: rgba(0,0,0,0.75); }
+  body.light-mode .pay-item { background: rgba(0,0,0,0.02); } body.light-mode .pay-item:hover { background: rgba(0,0,0,0.04); }
+
+  * { margin:0;padding:0;box-sizing:border-box; }
+  body { background:var(--dark-navy);color:var(--text-white);font-family:'Raleway',sans-serif;min-height:100vh;overflow-x:hidden;transition: background 0.4s ease, color 0.4s ease; }
+  body.bn { font-family: 'Hind Siliguri', sans-serif; }
+  body.bn .name, body.bn .stitle, body.bn .footer-brand, body.bn .contact-card h2, body.bn .footer-col h4, body.bn .section-divider span { font-family: 'Anek Bangla', sans-serif; }
+
+  .bg-canvas { position:fixed;inset:0;z-index:0;background:radial-gradient(ellipse at 20% 20%,#0d2550 0%,transparent 55%),radial-gradient(ellipse at 80% 80%,#1a0a2e 0%,transparent 55%),var(--dark-navy);transition: background 0.4s ease; }
+  .stars { position:fixed;inset:0;z-index:0;overflow:hidden; } .star { position:absolute;background:white;border-radius:50%;animation:twinkle var(--dur,3s) ease-in-out infinite;animation-delay:var(--delay,0s);opacity:0; }
+  @keyframes twinkle { 0%,100%{opacity:0;transform:scale(0.5);} 50%{opacity:var(--op,0.7);transform:scale(1);} }
+  .orb { position:fixed;border-radius:50%;filter:blur(80px);animation:drift 14s ease-in-out infinite alternate;pointer-events:none;z-index:0;transition: opacity 0.4s; }
+  .orb1 { width:400px;height:400px;background:rgba(26,60,120,0.25);top:-100px;left:-100px; } .orb2 { width:280px;height:280px;background:rgba(201,168,76,0.08);bottom:0;right:-50px;animation-direction:alternate-reverse;animation-duration:10s; }
+  @keyframes drift { 0%{transform:translate(0,0);} 100%{transform:translate(40px,60px);} }
+
+  .top-nav { position:fixed;top:18px;left:18px;z-index:1000; } .menu-btn { width:42px;height:42px;background:rgba(5,12,26,0.6);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.1);border-radius:11px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer;transition:all 0.3s; }
+  .menu-btn:hover { background:rgba(201,168,76,0.15);border-color:rgba(201,168,76,0.4); } .menu-btn span { display:block;width:18px;height:2px;background:var(--accent-gold);border-radius:2px;transition:all 0.3s ease; }
+  .menu-btn.active span:nth-child(1) { transform:translateY(7px) rotate(45deg); } .menu-btn.active span:nth-child(2) { opacity:0; } .menu-btn.active span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+  .dropdown-menu { position:absolute;top:52px;left:0;background:rgba(10,20,40,0.9);backdrop-filter:blur(16px);border:1px solid var(--border);border-radius:14px;padding:8px;min-width:170px;display:none;box-shadow:0 8px 30px rgba(0,0,0,0.4);transition: background 0.3s, border 0.3s; }
+  .dropdown-menu.open { display:block;animation:fadeSlideDown 0.3s ease; } .dropdown-item { display:flex;align-items:center;gap:10px;padding:12px 16px;color:var(--text-white);text-decoration:none;font-size:0.85rem;font-weight:500;border-radius:10px;transition:all 0.2s; }
+  .dropdown-item:hover { background:rgba(201,168,76,0.12);color:var(--accent-gold); } .dropdown-item svg { width:18px;height:18px;fill:currentColor;opacity:0.85; }
+
+  .lang-switch { position:fixed;top:18px;right:18px;z-index:1000;display:flex;background:rgba(5,12,26,0.6);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.1);border-radius:11px;overflow:hidden;transition: all 0.3s; }
+  .lang-btn { padding:8px 14px;background:transparent;border:none;color:var(--text-muted);font-family:'Poppins','Hind Siliguri',sans-serif;font-size:0.8rem;font-weight:600;cursor:pointer;transition:all 0.3s; }
+  .lang-btn.active { background:var(--accent-gold);color:#050c1a; }
+
+  .page { position:relative;z-index:1;max-width:640px;margin:0 auto;padding:0 18px 0; } .hero { padding-top:28px; }
+  .banner-wrap { position:relative; border-radius:20px 20px 0 0; overflow:hidden; border:1px solid var(--border); border-bottom:none; animation:fadeIn 1s ease forwards; }
+  .bg-banner { width:100%;height:190px;object-fit:cover;object-position:center 40%;display:block;filter:brightness(0.65) saturate(1.2); }
+  .banner-watermark { position:absolute; bottom:12px; right:16px; height:36px; z-index:2; opacity:0.9; filter:drop-shadow(0 2px 4px rgba(0,0,0,0.7)); pointer-events:none; }
+  .profile-card { background:var(--card-bg);backdrop-filter:blur(20px);border:1px solid var(--border);border-radius:0 0 24px 24px;padding:0 28px 28px;text-align:center;animation:slideUp 0.8s ease 0.3s both; position:relative; transition: background 0.4s, border 0.4s; }
+  .avatar-wrap { position:relative;display:inline-block;margin-top:-58px;margin-bottom:10px; } .avatar { width:116px;height:116px;border-radius:50%;object-fit:cover;object-position:top center;border:4px solid var(--accent-gold);box-shadow:0 0 0 6px rgba(201,168,76,0.15),0 8px 30px rgba(0,0,0,0.5);animation:pulse 3s ease-in-out infinite;transition: border-color 0.4s, box-shadow 0.4s; }
+  @keyframes pulse { 0%,100%{box-shadow:0 0 0 6px rgba(201,168,76,0.15),0 8px 30px rgba(0,0,0,0.5);} 50%{box-shadow:0 0 0 14px rgba(201,168,76,0.07),0 8px 40px rgba(201,168,76,0.2);} }
+  .dot { position:absolute;bottom:8px;right:8px;width:15px;height:15px;background:#4ade80;border-radius:50%;border:3px solid var(--dark-navy);animation:blink 2s infinite;transition: border-color 0.4s; } @keyframes blink { 0%,100%{opacity:1;} 50%{opacity:0.3;} }
+  .share-btn { position:absolute;top:16px;right:16px;width:36px;height:36px;background:rgba(5,12,26,0.5);backdrop-filter:blur(6px);border:1px solid var(--border);border-radius:10px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.3s;z-index:2; }
+  .share-btn:hover { background:rgba(201,168,76,0.2);border-color:var(--accent-gold); } .share-btn svg { width:16px;height:16px;fill:var(--text-white); }
+  .greeting { font-size:0.85rem;color:var(--accent-gold);margin-bottom:6px;font-weight:500;min-height:20px;transition: color 0.4s; }
+  .name { font-family:'Playfair Display','Anek Bangla',serif;font-size:1.9rem;font-weight:900;background:linear-gradient(135deg,var(--text-white) 30%,var(--accent-gold) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1.2;margin-bottom:4px; }
+  .tagline { color:var(--accent-gold);font-size:0.76rem;font-weight:600;letter-spacing:3px;text-transform:uppercase;margin-bottom:14px;opacity:0.85;min-height:20px; }
+  .orn { display:flex;align-items:center;justify-content:center;gap:10px;margin:10px 0 16px; } .orn span { display:block;height:1px;width:55px;background:linear-gradient(90deg,transparent,var(--accent-gold)); } .orn span:last-child { transform:scaleX(-1); } .orn em { color:var(--accent-gold);font-style:normal; }
+  .location { font-size:0.8rem;color:var(--text-muted); }
+  .toast { position:fixed;bottom:100px;left:50%;transform:translateX(-50%) translateY(20px);background:#333;color:#fff;padding:12px 24px;border-radius:10px;font-size:0.85rem;font-family:'Poppins','Hind Siliguri',sans-serif;opacity:0;transition:all 0.3s;z-index:10000;pointer-events:none; }
+  .toast.show { opacity:1;transform:translateX(-50%) translateY(0); }
+
+  .sec { margin-top:14px;background:var(--card-bg);backdrop-filter:blur(12px);border:1px solid var(--border);border-radius:20px;padding:24px 26px;animation:slideUp 0.7s ease both;transition: background 0.4s, border 0.4s; }
+  .sec:nth-child(2){animation-delay:0.4s;} .sec:nth-child(3){animation-delay:0.6s;} .sec:nth-child(4){animation-delay:0.8s;} .sec:nth-child(5){animation-delay:1s;}
+  .stitle { font-family:'Playfair Display','Anek Bangla',serif;font-size:0.9rem;color:var(--accent-gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:16px;display:flex;align-items:center;gap:10px; }
+  .stitle::after { content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--accent-gold),transparent);opacity:0.3; }
+  .bio { font-size:0.87rem;line-height:1.85;color:rgba(240,244,255,0.82);font-weight:300;transition: color 0.4s; } body.bn .bio { font-weight: 400; line-height: 1.9; }
+  .see-more-btn { color:var(--accent-gold);font-weight:600;font-size:0.85rem;text-decoration:none;cursor:pointer;display:inline;margin-left:6px;transition:opacity 0.2s; } .see-more-btn:hover { opacity:0.8; }
+  
+  .clist { list-style:none;display:flex;flex-direction:column;gap:10px; } .citem { display:flex;align-items:center;gap:12px;padding:11px 14px;background:rgba(255,255,255,0.03);border-radius:12px;border:1px solid var(--border);text-decoration:none;color:var(--text-white);font-size:0.85rem;transition:all 0.3s; }
+  .citem:hover { background:rgba(201,168,76,0.08);border-color:rgba(201,168,76,0.3);transform:translateX(4px); }
+  .cico { width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 3px 8px rgba(0,0,0,0.2); }
+  .ico-em { background:linear-gradient(135deg,#e87722,#f9a825); } .ico-ph { background:linear-gradient(135deg,#4ade80,#22c55e); } .cico svg { width:18px;height:18px;fill:white; }
+  .cmeta { display:flex;flex-direction:column;gap:1px;min-width:0; } .clabel { font-size:0.65rem;color:var(--text-muted);font-weight:500;text-transform:uppercase;letter-spacing:1px; } .cvalue { font-size:0.85rem;font-weight:500;color:var(--text-white);letter-spacing:0.2px;word-break:break-word;transition: color 0.4s; }
+
+  .slist { display:flex;flex-direction:column;gap:10px; } .sitem { display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:14px;border:1px solid var(--border);text-decoration:none;color:var(--text-white);font-size:0.9rem;font-weight:500;transition:all 0.35s cubic-bezier(0.34,1.56,0.64,1);position:relative;overflow:hidden; }
+  .sitem::before { content:'';position:absolute;inset:0;opacity:0;transition:opacity 0.3s; } .sitem:hover { transform:translateX(6px) scale(1.01); } .sitem:hover::before { opacity:1; }
+  .sfb { background:rgba(24,119,242,0.08); } .sfb::before { background:linear-gradient(90deg,rgba(24,119,242,0.15),transparent); } .sfb:hover { border-color:rgba(24,119,242,0.4); }
+  .sig { background:rgba(225,48,108,0.08); } .sig::before { background:linear-gradient(90deg,rgba(225,48,108,0.15),transparent); } .sig:hover { border-color:rgba(225,48,108,0.4); }
+  .syt { background:rgba(255,0,0,0.08); } .syt::before { background:linear-gradient(90deg,rgba(255,0,0,0.15),transparent); } .syt:hover { border-color:rgba(255,0,0,0.4); }
+  .sibox { width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0; } .sibox svg { width:22px;height:22px; }
+  .sfb .sibox { background:rgba(24,119,242,0.25); } .sig .sibox { background:rgba(225,48,108,0.25); } .syt .sibox { background:rgba(255,0,0,0.25); }
+  .smeta { display:flex;flex-direction:column;gap:2px;position:relative;z-index:1; } .smeta strong { font-size:0.9rem; } .sarr { margin-left:auto;color:var(--text-muted);font-size:1rem;z-index:1;transition:transform 0.3s; } .sitem:hover .sarr { transform:translateX(4px);color:var(--accent-gold); }
+  
+  .mapbtn { display:flex;align-items:center;justify-content:space-between;padding:16px 20px;background:rgba(66,153,225,0.07);border-radius:16px;border:1px solid rgba(66,153,225,0.2);text-decoration:none;color:var(--text-white);transition:all 0.3s; }
+  .mapbtn:hover { background:rgba(66,153,225,0.15);border-color:rgba(66,153,225,0.5);transform:translateY(-2px); } .mapleft { display:flex;align-items:center;gap:14px; }
+  .mapico { width:48px;height:48px;background:linear-gradient(135deg,#4a90d9,#1a56a0);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:0 4px 12px rgba(74,144,217,0.3);animation:bounce 2s ease-in-out infinite; }
+  @keyframes bounce { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-5px);} } .mapinfo strong { display:block;font-size:0.93rem;margin-bottom:3px; } .mapinfo small { font-size:0.76rem;color:var(--text-muted); } .maparr { font-size:1.2rem;color:var(--accent-blue); }
+
+  .section-divider { position:relative;z-index:1; max-width:640px;margin:36px auto 0;padding:0 18px; display:flex;align-items:center;gap:16px; }
+  .section-divider::before,.section-divider::after { content:'';flex:1;height:1px; background:linear-gradient(90deg,transparent,rgba(201,168,76,0.4),transparent); }
+  .section-divider span { font-family:'Playfair Display','Anek Bangla',serif; color:var(--accent-gold);font-size:0.75rem;letter-spacing:3px;text-transform:uppercase;white-space:nowrap;opacity:0.7; }
+
+  .contact-section { position:relative;z-index:1; background:rgba(255,255,255,0.02); padding:48px 18px; display:flex; justify-content:center; transition: background 0.4s; }
+  .contact-card { background:#fff; border-radius:20px; padding:36px 30px; width:100%; max-width:340px; text-align:center; box-shadow:0 8px 40px rgba(0,0,0,0.4),0 0 0 1px rgba(201,168,76,0.2); animation:slideUp 0.8s ease 1.2s both; }
+  .contact-avatar-wrapper { width:80px;height:80px;border-radius:50%;overflow:hidden; margin:0 auto 14px;border:3px solid #f0f0f0; } .contact-avatar-wrapper img { width:100%;height:100%;object-fit:cover; }
+  .contact-card h2 { font-size:18px;font-weight:700;color:#1a1a1a;margin-bottom:4px;font-family:'Poppins','Anek Bangla',sans-serif; } .contact-card .role { font-size:13px;color:#888;margin-bottom:12px;font-family:'Poppins','Hind Siliguri',sans-serif; }
+  .phone-link { display:inline-flex;align-items:center;gap:6px; color:var(--orange);font-size:15px;font-weight:600; text-decoration:none;margin-bottom:24px;font-family:'Poppins',sans-serif; } .phone-link svg { width:16px;height:16px;fill:var(--orange); }
+  .contact-card input { width:100%;padding:13px 16px; border:1.5px solid #e0e0e0;border-radius:10px; font-family:'Poppins','Hind Siliguri',sans-serif;font-size:13px;color:#333; margin-bottom:14px;outline:none;transition:border-color 0.2s; }
+  .contact-card input::placeholder { color:#aaa; } .contact-card input:focus { border-color:var(--orange); }
+  .btn-callback { width:100%;padding:14px;background:var(--orange);color:#fff; border:none;border-radius:10px;font-family:'Poppins','Hind Siliguri',sans-serif; font-size:14px;font-weight:600;cursor:pointer; transition:background 0.2s,transform 0.15s; } .btn-callback:hover { background:#cf6610;transform:translateY(-1px); }
+
+  .site-footer { position:relative;z-index:1; background:rgba(255,255,255,0.97); color:#1a1a1a; padding:50px 24px 30px; margin-top:0; transition: background 0.4s; }
+  .footer-brand { text-align:center;font-size:22px;font-weight:700;color:#1a1a1a;margin-bottom:10px;font-family:'Poppins','Anek Bangla',sans-serif; } .footer-location { text-align:center;font-size:13px;color:#666;margin-bottom:20px;font-family:'Poppins','Hind Siliguri',sans-serif; }
+  .social-icons { display:flex;justify-content:center;gap:18px;margin-bottom:40px; } .social-icons a { display:flex;align-items:center;justify-content:center; width:38px;height:38px;border-radius:50%; border:1.5px solid #ddd;color:#444;text-decoration:none; transition:border-color 0.2s,color 0.2s;font-size:16px; } .social-icons a:hover { border-color:var(--orange);color:var(--orange); } .social-icons svg { width:17px;height:17px;fill:currentColor; }
+  .footer-nav { display:flex;justify-content:space-between; max-width:600px;margin:0 auto 40px;gap:10px; } .footer-col h4 { font-size:14px;font-weight:700;color:#1a1a1a;margin-bottom:14px;font-family:'Poppins','Anek Bangla',sans-serif; } .footer-col a { display:block;font-size:13px;color:#666; text-decoration:none;margin-bottom:8px; transition:color 0.2s;font-family:'Poppins','Hind Siliguri',sans-serif; } .footer-col a:hover { color:var(--orange); }
+  .footer-bottom { border-top:1px solid #eee;padding-top:20px; display:flex;justify-content:space-between;align-items:center; flex-wrap:wrap;gap:14px;max-width:700px;margin:0 auto; } .footer-copyright { text-align:center;font-size:12px;color:#aaa;margin-bottom:20px;font-family:'Poppins','Hind Siliguri',sans-serif; }
+  .contact-item { display:flex;align-items:center;gap:10px;font-size:13px;color:#333;font-weight:500;font-family:'Poppins','Hind Siliguri',sans-serif; } .contact-item-icon { width:36px;height:36px;border-radius:50%; background:#fff7f0;border:1.5px solid var(--orange); display:flex;align-items:center;justify-content:center; } .contact-item-icon svg { width:16px;height:16px;fill:var(--orange); }
+
+  @keyframes fadeIn { from{opacity:0;} to{opacity:1;} } @keyframes slideUp { from{opacity:0;transform:translateY(28px);} to{opacity:1;transform:translateY(0);} } @keyframes fadeSlideDown { from{opacity:0;transform:translateY(-10px);} to{opacity:1;transform:translateY(0);} }
+
+  .wa-float { position:fixed; bottom:24px;right:20px; z-index:9999; display:flex;flex-direction:column;align-items:flex-end;gap:10px; }
+  .wa-chat-box { background:#fff; border-radius:16px; box-shadow:0 8px 32px rgba(0,0,0,0.18); width:270px; overflow:hidden; display:none; animation:slideUp 0.3s ease; border:1px solid #e5e5e5; } .wa-chat-box.open { display:block; }
+  .wa-chat-header { background:#25D366; padding:14px 16px; display:flex;align-items:center;gap:10px; } .wa-chat-header .wa-avatar { width:40px;height:40px;border-radius:50%; background:#128C7E;display:flex;align-items:center;justify-content:center; font-size:18px;flex-shrink:0;border:2px solid rgba(255,255,255,0.4); }
+  .wa-chat-header .wa-info strong { display:block;color:#fff;font-family:'Poppins','Anek Bangla',sans-serif;font-size:14px;font-weight:600; } .wa-chat-header .wa-info small { color:rgba(255,255,255,0.85);font-family:'Poppins','Hind Siliguri',sans-serif;font-size:11px; }
+  .wa-chat-header .wa-close { margin-left:auto;color:#fff;cursor:pointer;font-size:18px; background:none;border:none;line-height:1;opacity:0.8; } .wa-chat-header .wa-close:hover { opacity:1; }
+  .wa-chat-body { padding:14px 16px;background:#f0f0f0; } .wa-bubble { background:#fff;border-radius:0 10px 10px 10px; padding:10px 14px;font-family:'Poppins','Hind Siliguri',sans-serif;font-size:13px; color:#333;line-height:1.5;box-shadow:0 1px 3px rgba(0,0,0,0.08); margin-bottom:6px;max-width:90%; } .wa-time { font-size:10px;color:#999;text-align:right;margin-top:4px; }
+  .wa-chat-footer { padding:12px 16px;background:#fff;border-top:1px solid #eee; } .wa-start-btn { display:flex;align-items:center;justify-content:center;gap:8px; width:100%;padding:11px; background:#25D366;color:#fff;border:none;border-radius:10px; font-family:'Poppins','Hind Siliguri',sans-serif;font-size:13px;font-weight:600; cursor:pointer;text-decoration:none;transition:background 0.2s; } .wa-start-btn:hover { background:#1da851; } .wa-start-btn svg { width:18px;height:18px;fill:#fff; }
+  .wa-fab { width:56px;height:56px;border-radius:50%; background:#25D366;border:none;cursor:pointer; display:flex;align-items:center;justify-content:center; box-shadow:0 4px 18px rgba(37,211,102,0.5); transition:transform 0.2s,box-shadow 0.2s; animation:waPulse 2.5s ease-in-out infinite; } .wa-fab:hover { transform:scale(1.08);box-shadow:0 6px 24px rgba(37,211,102,0.6); } .wa-fab svg { width:30px;height:30px;fill:#fff; }
+  .wa-badge { position:absolute;top:-4px;right:-4px; width:18px;height:18px;background:#e87722;border-radius:50%; border:2px solid #fff;font-size:10px;color:#fff; display:flex;align-items:center;justify-content:center; font-family:'Poppins',sans-serif;font-weight:700; } .wa-fab-wrap { position:relative; }
+  @keyframes waPulse { 0%,100%{box-shadow:0 4px 18px rgba(37,211,102,0.5);} 50%{box-shadow:0 4px 28px rgba(37,211,102,0.8),0 0 0 8px rgba(37,211,102,0.1);} }
+
+  /* ── Beautiful Color Coded Payment List ── */
+  .pay-list { display:flex; flex-direction:column; gap:10px; }
+  .pay-item { display:flex; align-items:center; gap:12px; padding:10px 14px; border-radius:12px; border:1px solid var(--border); cursor:pointer; transition:all 0.3s; background:rgba(255,255,255,0.03); }
+  .pay-item:hover { transform:translateY(-2px); box-shadow:0 4px 12px rgba(0,0,0,0.1); border-color:rgba(255,255,255,0.15); }
+  .pay-ico { width:36px; height:36px; border-radius:10px; display:flex; align-items:center; justify-content:center; font-weight:800; font-family:'Poppins',sans-serif; color:white; font-size:15px; flex-shrink:0; box-shadow:0 3px 10px rgba(0,0,0,0.2); }
+  .ico-bkash { background:linear-gradient(135deg, #E2136E, #C2185B); }
+  .ico-nagad { background:linear-gradient(135deg, #F6921E, #FBBC05); }
+  .ico-ibbl { background:linear-gradient(135deg, #006B3F, #00994D); }
+  .pay-info { display:flex; flex-direction:column; gap:1px; flex:1; }
+  .pay-info strong { font-size:0.85rem; font-weight:500; color:var(--text-white); }
+  .pay-info small { font-size:0.72rem; color:var(--text-muted); }
+  .pay-arrow { margin-left:auto; color:var(--text-muted); transition:transform 0.3s; font-size:0.9rem; }
+  .pay-item:hover .pay-arrow { transform:translateX(4px); color:var(--accent-gold); }
+
+  /* ── Payment Modal Styles ── */
+  .pay-modal-overlay { position:fixed; inset:0; background:rgba(0,0,0,0.6); backdrop-filter:blur(6px); z-index:9998; display:none; align-items:center; justify-content:center; animation:fadeIn 0.3s ease; }
+  .pay-modal-overlay.open { display:flex; }
+  .pay-modal { background:#fff; width:90%; max-width:340px; border-radius:20px; overflow:hidden; box-shadow:0 15px 50px rgba(0,0,0,0.4); animation:slideUp 0.4s ease; }
+  .pay-modal-header { padding:24px 20px; text-align:center; color:#fff; position:relative; }
+  .pay-modal-header h3 { font-size:18px; font-weight:700; margin:0; font-family:'Poppins','Hind Siliguri',sans-serif; }
+  .pay-modal-header p { font-size:12px; opacity:0.9; margin-top:4px; font-family:'Poppins','Hind Siliguri',sans-serif; }
+  .pay-modal-close { position:absolute; top:12px; right:12px; background:rgba(255,255,255,0.2); border:none; color:#fff; width:28px; height:28px; border-radius:50%; font-size:16px; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:background 0.2s; }
+  .pay-modal-close:hover { background:rgba(255,255,255,0.4); }
+  .pay-modal-body { padding:20px; }
+  .pay-detail-row { display:flex; align-items:flex-start; gap:12px; margin-bottom:14px; }
+  .pay-detail-icon { width:36px; height:36px; border-radius:10px; background:#f0f0f0; display:flex; align-items:center; justify-content:center; flex-shrink:0; } .pay-detail-icon svg { width:18px; height:18px; fill:#555; }
+  .pay-detail-info { flex:1; } .pay-detail-label { font-size:11px; color:#888; font-weight:600; text-transform:uppercase; font-family:'Poppins','Hind Siliguri',sans-serif; } .pay-detail-value { font-size:14px; color:#1a1a1a; font-weight:500; word-break:break-all; font-family:'Poppins','Hind Siliguri',sans-serif; }
+  .pay-copy-btn { width:100%; padding:12px; border:none; border-radius:10px; color:#fff; font-family:'Poppins','Hind Siliguri',sans-serif; font-size:14px; font-weight:600; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:8px; transition:opacity 0.2s; margin-top:6px; }
+  .pay-copy-btn:hover { opacity:0.9; } .pay-copy-btn svg { width:18px; height:18px; fill:#fff; }
+  .modal-bkash .pay-modal-header { background:linear-gradient(135deg, #E2136E, #C2185B); } .modal-bkash .pay-copy-btn { background:#E2136E; }
+  .modal-nagad .pay-modal-header { background:linear-gradient(135deg, #F6921E, #F26522); } .modal-nagad .pay-copy-btn { background:#F6921E; }
+  .modal-ibbl .pay-modal-header { background:linear-gradient(135deg, #006B3F, #004d2e); } .modal-ibbl .pay-copy-btn { background:#006B3F; }
+</style>
+</head>
+<body>
+
+<div class="top-nav" id="topNav">
+  <button class="menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+  <div class="dropdown-menu" id="dropdownMenu">
+    <a href="#" class="dropdown-item"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg><span data-i18n="menu_home">Home</span></a>
+    <a href="tel:+8801720196950" class="dropdown-item"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><span data-i18n="menu_contact">Contact</span></a>
+    <a href="javascript:void(0)" class="dropdown-item" id="themeToggleBtn">
+      <svg id="themeIconSun" viewBox="0 0 24 24"><path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0 .39-.39.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"/></svg>
+      <svg id="themeIconMoon" viewBox="0 0 24 24" style="display:none;"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"/></svg>
+      <span data-i18n="menu_theme_light">Light Mode</span>
+    </a>
+  </div>
+</div>
+
+<div class="lang-switch" id="langSwitch">
+  <button class="lang-btn active" data-lang="en">EN</button>
+  <button class="lang-btn" data-lang="bn">বাংলা</button>
+</div>
+<div class="toast" id="toast"></div>
+<div class="bg-canvas"></div><div class="stars" id="stars"></div><div class="orb orb1"></div><div class="orb orb2"></div>
+
+<div class="page">
+  <div class="hero">
+    <div class="banner-wrap">
+      <img class="bg-banner" src="https://z-cdn-media.chatglm.cn/files/c743763b-e064-49be-8bcf-edd7eb6e1d6c.jpg?auth_key=1878348018-0671c49cddf5470e93b3ac6bfb053d04-0-4c98108a7199a7e4f766c7640be83ce8" alt="Banner" />
+      <img class="banner-watermark" src="https://z-cdn-media.chatglm.cn/files/c7f652b2-66c3-409d-87a0-6d3193fff572.png?auth_key=1878348018-b0a414e51d1a4109bf437fc842f0a279-0-71cbb48b81da348961c4ee0ede9fe4de" alt="Watermark" />
+    </div>
+    <div class="profile-card">
+      <div class="avatar-wrap"><img class="avatar" src="https://z-cdn-media.chatglm.cn/files/bcf345e5-e921-4936-81f4-dbf4694fac3b.jpg?auth_key=1878344447-cd9bca608d514471ba457bbc23d0a38a-0-5499021c03c3d373a4c1cea615241cfe" alt="Abdus Salam" /><span class="dot"></span></div>
+      <div class="greeting" id="greeting"></div><div class="name">Abdus Salam</div><div class="tagline" id="typingText"></div>
+      <div class="orn"><span></span><em>✦</em><span></span></div><div class="location">📍 Bangladesh</div>
+      <div class="share-btn" id="shareBtn" title="Share Profile"><svg viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/></svg></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="stitle" data-i18n="about_title">About</div>
+    <p class="bio"><span data-i18n="bio_short">Welcome to my page! I am Abdus Salam. </span><span id="more-text" style="display:none;" data-i18n="bio_long">I was born on August 20, 2006, in a serene and beautiful village in the Chandina Upazila of Cumilla. I am the son of Abdul Kader and Halema Begum. It is through their boundless love, care, and moral guidance that I have become the person I am today. My roots lie in the Kaduti Bazar area of Borkoroi Union, under Chandina Police Station. Since childhood, I have felt a deep, soulful connection to this land. I began my academic journey at Kaduti Government Primary School, where I successfully completed my 5th grade. Later, I enrolled in Kaduti High School for my secondary education and completed the 10th grade there. The foundation of my personality and thoughts was built amidst this rural environment and a simple way of life.</span><a href="javascript:void(0);" id="see-more-btn" class="see-more-btn" onclick="toggleBio()" data-i18n="see_more">See more</a></p>
+  </div>
+
+  <div class="sec">
+    <div class="stitle" data-i18n="contact_title">Contact</div>
+    <ul class="clist">
+      <li><a class="citem" href="mailto:abdussalam.officially@gmail.com"><span class="cico ico-em"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></span><div class="cmeta"><span class="clabel" data-i18n="label_email">Email</span><span class="cvalue">abdussalam.officially@gmail.com</span></div></a></li>
+      <li><a class="citem" href="tel:+8801720196950"><span class="cico ico-ph"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></span><div class="cmeta"><span class="clabel" data-i18n="label_phone">Phone</span><span class="cvalue">+880 1720-196950</span></div></a></li>
+    </ul>
+  </div>
+
+  <div class="sec">
+    <div class="stitle" data-i18n="social_title">Social Media</div>
+    <div class="slist">
+      <a href="https://www.facebook.com/abdussalam.officially" target="_blank" class="sitem sfb"><span class="sibox"><svg viewBox="0 0 24 24" fill="white"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></span><span class="smeta"><strong>Facebook</strong></span><span class="sarr">→</span></a>
+      <a href="https://www.instagram.com/abdussalam.officially" target="_blank" class="sitem sig"><span class="sibox"><svg viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></span><span class="smeta"><strong>Instagram</strong></span><span class="sarr">→</span></a>
+      <a href="https://youtube.com/@abdussalamofficially" target="_blank" class="sitem syt"><span class="sibox"><svg viewBox="0 0 24 24" fill="white"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></span><span class="smeta"><strong>YouTube</strong></span><span class="sarr">→</span></a>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="stitle" data-i18n="location_title">Location</div>
+    <a href="https://maps.app.goo.gl/k3bbs7ptDDwt7m7RA" target="_blank" class="mapbtn"><div class="mapleft"><div class="mapico">📍</div><div class="mapinfo"><strong data-i18n="my_location">My Location</strong><small data-i18n="map_sub">Bangladesh · View on Google Maps</small></div></div><span class="maparr">→</span></a>
+  </div>
+
+  <!-- Beautiful Color Coded Payment Section -->
+  <div class="sec">
+    <div class="stitle" data-i18n="payment_title">Payment</div>
+    <div class="pay-list">
+      <div class="pay-item" onclick="openPayModal('bkash')">
+        <div class="pay-ico ico-bkash">b</div>
+        <div class="pay-info"><strong>bKash</strong><small data-i18n="bkash_type">Personal Account</small></div>
+        <span class="pay-arrow">→</span>
+      </div>
+      <div class="pay-item" onclick="openPayModal('nagad')">
+        <div class="pay-ico ico-nagad">N</div>
+        <div class="pay-info"><strong>নগদ (Nagad)</strong><small data-i18n="nagad_type">Personal Account</small></div>
+        <span class="pay-arrow">→</span>
+      </div>
+      <div class="pay-item" onclick="openPayModal('ibbl')">
+        <div class="pay-ico ico-ibbl">IB</div>
+        <div class="pay-info"><strong data-i18n="ibbl_name">Islami Bank BD PLC</strong><small data-i18n="ibbl_sub">Based on Islamic Shari'ah</small></div>
+        <span class="pay-arrow">→</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Payment Modals -->
+<div class="pay-modal-overlay" id="modal-bkash" onclick="closePayModal(event)">
+  <div class="pay-modal modal-bkash" onclick="event.stopPropagation()">
+    <div class="pay-modal-header"><button class="pay-modal-close" onclick="closePayModal()">&times;</button><h3>bKash</h3><p data-i18n="bkash_type">Personal Account</p></div>
+    <div class="pay-modal-body">
+      <div class="pay-detail-row"><div class="pay-detail-icon"><svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg></div><div class="pay-detail-info"><div class="pay-detail-label" data-i18n="label_acc_name">Account Name</div><div class="pay-detail-value">Abdus Salam</div></div></div>
+      <div class="pay-detail-row"><div class="pay-detail-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg></div><div class="pay-detail-info"><div class="pay-detail-label" data-i18n="label_acc_no">Account Number</div><div class="pay-detail-value">01720-196950</div></div></div>
+      <button class="pay-copy-btn" onclick="copyText('01720196950', this)"><svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg><span data-i18n="copy_btn">Copy Number</span></button>
+    </div>
+  </div>
+</div>
+
+<div class="pay-modal-overlay" id="modal-nagad" onclick="closePayModal(event)">
+  <div class="pay-modal modal-nagad" onclick="event.stopPropagation()">
+    <div class="pay-modal-header"><button class="pay-modal-close" onclick="closePayModal()">&times;</button><h3>নগদ (Nagad)</h3><p data-i18n="nagad_type">Personal Account</p></div>
+    <div class="pay-modal-body">
+      <div class="pay-detail-row"><div class="pay-detail-icon"><svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg></div><div class="pay-detail-info"><div class="pay-detail-label" data-i18n="label_acc_name">Account Name</div><div class="pay-detail-value">Abdus Salam</div></div></div>
+      <div class="pay-detail-row"><div class="pay-detail-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg></div><div class="pay-detail-info"><div class="pay-detail-label" data-i18n="label_acc_no">Account Number</div><div class="pay-detail-value">01720-196950</div></div></div>
+      <button class="pay-copy-btn" onclick="copyText('01720196950', this)"><svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg><span data-i18n="copy_btn">Copy Number</span></button>
+    </div>
+  </div>
+</div>
+
+<div class="pay-modal-overlay" id="modal-ibbl" onclick="closePayModal(event)">
+  <div class="pay-modal modal-ibbl" onclick="event.stopPropagation()">
+    <div class="pay-modal-header"><button class="pay-modal-close" onclick="closePayModal()">&times;</button><h3 data-i18n="ibbl_name">Islami Bank BD PLC</h3><p data-i18n="ibbl_sub">Based on Islamic Shari'ah</p></div>
+    <div class="pay-modal-body">
+      <div class="pay-detail-row"><div class="pay-detail-icon"><svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg></div><div class="pay-detail-info"><div class="pay-detail-label" data-i18n="label_acc_name">Account Name</div><div class="pay-detail-value">Abu Salam</div></div></div>
+      <div class="pay-detail-row"><div class="pay-detail-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg></div><div class="pay-detail-info"><div class="pay-detail-label" data-i18n="label_acc_no">Account Number</div><div class="pay-detail-value">20507770223059011</div></div></div>
+      <div class="pay-detail-row"><div class="pay-detail-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div><div class="pay-detail-info"><div class="pay-detail-label" data-i18n="label_branch">Branch</div><div class="pay-detail-value">Comilla Cantonment</div></div></div>
+      <div class="pay-detail-row"><div class="pay-detail-icon"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></div><div class="pay-detail-info"><div class="pay-detail-label" data-i18n="label_routing">Routing Number</div><div class="pay-detail-value">125270607</div></div></div>
+      <button class="pay-copy-btn" onclick="copyText('20507770223059011', this)"><svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg><span data-i18n="copy_btn_acc">Copy Account Number</span></button>
+    </div>
+  </div>
+</div>
+
+<div class="section-divider" style="margin-bottom:0;"><span data-i18n="get_in_touch">Get In Touch</span></div>
+
+<div class="contact-section">
+  <div class="contact-card" id="contact-card">
+    <div id="form-view">
+      <div class="contact-avatar-wrapper"><img src="https://z-cdn-media.chatglm.cn/files/bcf345e5-e921-4936-81f4-dbf4694fac3b.jpg?auth_key=1878344447-cd9bca608d514471ba457bbc23d0a38a-0-5499021c03c3d373a4c1cea615241cfe" alt="Abdus Salam" /></div>
+      <h2>Abdus Salam</h2><p class="role" data-i18n="role_ceo">CEO</p>
+      <a href="tel:+8801720196950" class="phone-link"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>+880 1720-196950</a>
+      <form id="callback-form" onsubmit="handleSubmit(event)">
+        <input type="text" id="f-name" name="name" data-i18n-ph="ph_name" placeholder="Your Full Name" required /><input type="tel" id="f-phone" name="phone" data-i18n-ph="ph_phone" placeholder="Your Phone Number" required /><input type="email" id="f-email" name="email" data-i18n-ph="ph_email" placeholder="Your Email" required />
+        <button type="submit" class="btn-callback" id="submit-btn" data-i18n="btn_callback">Request a Callback</button>
+      </form>
+    </div>
+    <div id="success-view" style="display:none; padding:20px 0; text-align:center;">
+      <div style="font-size:52px; margin-bottom:12px;">✅</div><h3 style="color:#1a1a1a;font-size:18px;margin:0 0 8px;" data-i18n="success_title">Request Sent!</h3><p style="color:#666;font-size:13px;line-height:1.7;margin-bottom:20px;" data-i18n="success_msg">Thank you! We've received your details.<br>We'll get back to you very soon. 🙌</p>
+      <div id="submitted-details" style="background:#fff7f0;border:1px solid #f0ddd0;border-radius:10px;padding:14px 16px;text-align:left;font-size:13px;color:#444;line-height:2;margin-bottom:16px;"></div>
+      <button class="btn-callback" onclick="resetForm()" style="background:#333;" data-i18n="btn_again">Submit Another Request</button>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-brand">abdussalam.officially</div><div class="footer-location">📍 Bangladesh</div>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/abdussalam.officially" target="_blank" title="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+    <a href="https://www.instagram.com/abdussalam.officially" target="_blank" title="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+    <a href="https://youtube.com/@abdussalamofficially" target="_blank" title="YouTube"><svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+  </div>
+  <div class="footer-nav">
+    <div class="footer-col"><h4 data-i18n="f_links">Links</h4><a href="#" data-i18n="f_home">Home</a><a href="#" data-i18n="f_about">About Me</a><a href="#" data-i18n="f_portfolio">Portfolio</a></div>
+    <div class="footer-col"><h4 data-i18n="f_services">Services</h4><a href="#" data-i18n="f_content">Content Creation</a><a href="#" data-i18n="f_consult">Consultation</a><a href="#" data-i18n="f_training">Training</a></div>
+    <div class="footer-col"><h4 data-i18n="f_connect">Connect</h4><a href="https://www.facebook.com/abdussalam.officially" target="_blank">Facebook</a><a href="https://www.instagram.com/abdussalam.officially" target="_blank">Instagram</a><a href="https://youtube.com/@abdussalamofficially" target="_blank">YouTube</a></div>
+  </div>
+  <div class="footer-bottom">
+    <div class="contact-item"><div class="contact-item-icon"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></div>+880 1720-196950</div>
+    <div class="contact-item"><div class="contact-item-icon"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>abdussalam.officially@gmail.com</div>
+  </div>
+  <p class="footer-copyright" style="margin-top:20px;" data-i18n="copyright">Made with ❤️ by Abdus Salam · © 2026</p>
+</footer>
+
+<!-- WhatsApp Widget -->
+<div class="wa-float" id="wa-float">
+  <div class="wa-chat-box" id="wa-box"><div class="wa-chat-header"><div class="wa-avatar">👤</div><div class="wa-info"><strong>Abdus Salam</strong><small>🟢 Online · Typically replies instantly</small></div><button class="wa-close" onclick="toggleChat()">✕</button></div><div class="wa-chat-body"><div class="wa-bubble">Hello! 👋 How can I help you today? Feel free to send me a message anytime.<div class="wa-time" id="wa-time"></div></div></div><div class="wa-chat-footer"><a class="wa-start-btn" id="wa-link" href="#" target="_blank"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg><span data-i18n="wa_btn">Start Chat on WhatsApp</span></a></div></div>
+  <div class="wa-fab-wrap"><button class="wa-fab" onclick="toggleChat()" title="Chat on WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></button><div class="wa-badge">1</div></div>
+</div>
+
+<script>
+  const T = {
+    en: { menu_home: "Home", menu_contact: "Contact", menu_theme_light: "Light Mode", menu_theme_dark: "Dark Mode", about_title: "About", contact_title: "Contact", social_title: "Social Media", location_title: "Location", bio_short: "Welcome to my page! I am Abdus Salam. ", bio_long: "I was born on August 20, 2006, in a serene and beautiful village in the Chandina Upazila of Cumilla. I am the son of Abdul Kader and Halema Begum. It is through their boundless love, care, and moral guidance that I have become the person I am today. My roots lie in the Kaduti Bazar area of Borkoroi Union, under Chandina Police Station. Since childhood, I have felt a deep, soulful connection to this land. I began my academic journey at Kaduti Government Primary School, where I successfully completed my 5th grade. Later, I enrolled in Kaduti High School for my secondary education and completed the 10th grade there. The foundation of my personality and thoughts was built amidst this rural environment and a simple way of life.", see_more: "See more", see_less: "See less", label_email: "Email", label_phone: "Phone", my_location: "My Location", map_sub: "Bangladesh · View on Google Maps", get_in_touch: "Get In Touch", role_ceo: "CEO", ph_name: "Your Full Name", ph_phone: "Your Phone Number", ph_email: "Your Email", btn_callback: "Request a Callback", btn_sending: "Sending...", success_title: "Request Sent!", success_msg: "Thank you! We've received your details.<br>We'll get back to you very soon. 🙌", btn_again: "Submit Another Request", f_links: "Links", f_home: "Home", f_about: "About Me", f_portfolio: "Portfolio", f_services: "Services", f_content: "Content Creation", f_consult: "Consultation", f_training: "Training", f_connect: "Connect", copyright: "Made with ❤️ by Abdus Salam · © 2026", wa_btn: "Start Chat on WhatsApp", greeting_morning: "Good Morning ☀️", greeting_afternoon: "Good Afternoon 🌤️", greeting_evening: "Good Evening 🌆", greeting_night: "Good Night 🌙", typing_text: "Content Creator • Digital Entrepreneur", toast_copied: "Link Copied!", toast_shared: "Shared Successfully!", payment_title: "Payment", bkash_type: "Personal Account", nagad_type: "Personal Account", ibbl_name: "Islami Bank BD PLC", ibbl_sub: "Based on Islamic Shari'ah", label_acc_name: "Account Name", label_acc_no: "Account Number", label_branch: "Branch", label_routing: "Routing Number", copy_btn: "Copy Number", copy_btn_acc: "Copy Account Number", toast_copied_acc: "Copied Successfully!" },
+    bn: { menu_home: "হোম", menu_contact: "যোগাযোগ", menu_theme_light: "লাইট মোড", menu_theme_dark: "ডার্ক মোড", about_title: "পরিচিতি", contact_title: "যোগাযোগ", social_title: "সোশ্যাল মিডিয়া", location_title: "অবস্থান", bio_short: "আমার পেজে আপনাকে স্বাগতম! আমি আব্দুস সালাম। ", bio_long: "আমি ২০ আগস্ট, ২০০৬ সালে কুমিল্লার চান্দিনা উপজেলার একটি শান্ত ও সুন্দর গ্রামে জন্মগ্রহণ করি। আমি আব্দুল কাদের ও হালেমা বেগমের পুত্র। তাঁদের অসীম ভালোবাসা, যত্ন ও নৈতিক শিক্ষার মাধ্যমেই আমি আজকের আমি হতে পেরেছি। আমার শিকড় চান্দিনা থানার অন্তর্গত বরকডাই ইউনিয়নের কদুতি বাজার এলাকায়। শৈশব থেকেই এই মাটির সাথে আমার গভীর আত্মিক সম্পর্ক রয়েছে। আমি কদুতি সরকারি প্রাথমিক বিদ্যালয়ে আমার শিক্ষাজীবন শুরু করি, যেখান থেকে আমি সফলভাবে ৫ম শ্রেণি সম্পন্ন করি। পরে আমি মাধ্যমিক শিক্ষার জন্য কদুতি উচ্চ বিদ্যালয়ে ভর্তি হই এবং সেখানে ১০ম শ্রেণি সম্পন্ন করি। এই গ্রামীণ পরিবেশ ও সাদামাটা জীবনযাত্রার মাঝেই আমার ব্যক্তিত্ব ও চিন্তার ভিত্তি গড়ে ওঠে।", see_more: "আরও পড়ুন", see_less: "কম দেখুন", label_email: "ইমেইল", label_phone: "ফোন", my_location: "আমার অবস্থান", map_sub: "বাংলাদেশ · গুগল ম্যাপে দেখুন", get_in_touch: "যোগাযোগ করুন", role_ceo: "প্রধান নির্বাহী", ph_name: "আপনার পুরো নাম", ph_phone: "আপনার ফোন নম্বর", ph_email: "আপনার ইমেইল", btn_callback: "কলব্যাক অনুরোধ করুন", btn_sending: "পাঠানো হচ্ছে...", success_title: "অনুরোধ পাঠানো হয়েছে!", success_msg: "ধন্যবাদ! আমরা আপনার তথ্য পেয়েছি।<br>আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব। 🙌", btn_again: "আরেকটি অনুরোধ জমা দিন", f_links: "লিংক", f_home: "হোম", f_about: "আমার সম্পর্কে", f_portfolio: "পোর্টফোলিও", f_services: "সেবা", f_content: "কন্টেন্ট তৈরি", f_consult: "পরামর্শ", f_training: "প্রশিক্ষণ", f_connect: "সংযোগ", copyright: "Abdus Salam দ্বারা ❤️ দিয়ে তৈরি · © ২০২৬", wa_btn: "হোয়াটসঅ্যাপে চ্যাট শুরু করুন", greeting_morning: "সুপ্রভাত ☀️", greeting_afternoon: "শুভ বিকেল 🌤️", greeting_evening: "শুভ সন্ধ্যা 🌆", greeting_night: "শুভ রাত্রি 🌙", typing_text: "কন্টেন্ট ক্রিয়েটর • ডিজিটাল উদ্যোক্তা", toast_copied: "লিংক কপি হয়েছে!", toast_shared: "সফলভাবে শেয়ার করা হয়েছে!", payment_title: "পেমেন্ট", bkash_type: "পার্সোনাল অ্যাকাউন্ট", nagad_type: "পার্সোনাল অ্যাকাউন্ট", ibbl_name: "ইসলামী ব্যাংক বাংলাদেশ পিএলসি", ibbl_sub: "ইসলামী শরি'আহ ভিত্তিক", label_acc_name: "অ্যাকাউন্টের নাম", label_acc_no: "অ্যাকাউন্ট নম্বর", label_branch: "ব্রাঞ্চ", label_routing: "রাউটিং নম্বর", copy_btn: "নম্বর কপি করুন", copy_btn_acc: "অ্যাকাউন্ট নম্বর কপি করুন", toast_copied_acc: "সফলভাবে কপি হয়েছে!" }
+  };
+
+  let currentLang = localStorage.getItem('lang') || 'en'; let currentTheme = localStorage.getItem('theme') || 'dark';
+  function setLanguage(lang) { currentLang = lang; localStorage.setItem('lang', lang); document.body.classList.toggle('bn', lang === 'bn'); document.documentElement.lang = lang; document.querySelectorAll('[data-i18n]').forEach(el => { const key = el.getAttribute('data-i18n'); if (T[lang][key]) el.innerHTML = T[lang][key]; }); document.querySelectorAll('[data-i18n-ph]').forEach(el => { const key = el.getAttribute('data-i18n-ph'); if (T[lang][key]) el.placeholder = T[lang][key]; }); document.querySelectorAll('.lang-btn').forEach(btn => { btn.classList.toggle('active', btn.dataset.lang === lang); }); startTyping(lang); updateGreeting(lang); updateThemeText(); }
+  function setTheme(theme) { currentTheme = theme; localStorage.setItem('theme', theme); document.body.classList.toggle('light-mode', theme === 'light'); updateThemeText(); }
+  function updateThemeText() { const themeTextEl = document.querySelector('#themeToggleBtn [data-i18n="menu_theme_light"], #themeToggleBtn [data-i18n="menu_theme_dark"]'); const sunIcon = document.getElementById('themeIconSun'); const moonIcon = document.getElementById('themeIconMoon'); if (currentTheme === 'light') { if(themeTextEl) { themeTextEl.setAttribute('data-i18n', 'menu_theme_dark'); themeTextEl.textContent = T[currentLang].menu_theme_dark; } sunIcon.style.display = 'none'; moonIcon.style.display = 'block'; } else { if(themeTextEl) { themeTextEl.setAttribute('data-i18n', 'menu_theme_light'); themeTextEl.textContent = T[currentLang].menu_theme_light; } sunIcon.style.display = 'block'; moonIcon.style.display = 'none'; } }
+  document.getElementById('themeToggleBtn').addEventListener('click', () => { setTheme(currentTheme === 'dark' ? 'light' : 'dark'); });
+  const starsContainer = document.getElementById('stars'); for (let i = 0; i < 80; i++) { const star = document.createElement('div'); star.className = 'star'; const size = Math.random() * 2.5 + 0.5; star.style.cssText = `width:${size}px;height:${size}px;top:${Math.random()*100}%;left:${Math.random()*100}%;--dur:${Math.random()*4+2}s;--delay:${Math.random()*5}s;--op:${Math.random()*0.6+0.2};`; starsContainer.appendChild(star); }
+  const menuBtn = document.getElementById('menuBtn'); const dropdownMenu = document.getElementById('dropdownMenu'); const topNav = document.getElementById('topNav'); menuBtn.addEventListener('click', function(e) { e.stopPropagation(); menuBtn.classList.toggle('active'); dropdownMenu.classList.toggle('open'); }); document.addEventListener('click', function(e) { if (!topNav.contains(e.target)) { menuBtn.classList.remove('active'); dropdownMenu.classList.remove('open'); } });
+  document.querySelectorAll('.lang-btn').forEach(btn => { btn.addEventListener('click', () => setLanguage(btn.dataset.lang)); });
+  function updateGreeting(lang) { const h = new Date().getHours(); let gKey = 'greeting_night'; if (h >= 5 && h < 12) gKey = 'greeting_morning'; else if (h >= 12 && h < 17) gKey = 'greeting_afternoon'; else if (h >= 17 && h < 21) gKey = 'greeting_evening'; document.getElementById('greeting').textContent = T[lang][gKey]; }
+  let typingInterval; function startTyping(lang) { const el = document.getElementById('typingText'); const text = T[lang].typing_text; el.textContent = ''; let i = 0; clearInterval(typingInterval); typingInterval = setInterval(() => { if (i < text.length) { el.textContent += text.charAt(i); i++; } else clearInterval(typingInterval); }, 60); }
+  document.getElementById('shareBtn').addEventListener('click', async () => { const shareData = { title: 'Abdus Salam', text: 'Check out Abdus Salam\'s profile!', url: window.location.href }; try { if (navigator.share) { await navigator.share(shareData); showToast(T[currentLang].toast_shared); } else { await navigator.clipboard.writeText(window.location.href); showToast(T[currentLang].toast_copied); } } catch(err) { await navigator.clipboard.writeText(window.location.href); showToast(T[currentLang].toast_copied); } });
+  function showToast(msg) { const t = document.getElementById('toast'); t.textContent = msg; t.classList.add('show'); setTimeout(() => t.classList.remove('show'), 2500); }
+  function toggleBio() { const moreText = document.getElementById('more-text'); const btnText = document.getElementById('see-more-btn'); if (moreText.style.display === 'none') { moreText.style.display = 'inline'; btnText.textContent = T[currentLang].see_less; } else { moreText.style.display = 'none'; btnText.textContent = T[currentLang].see_more; } }
+  function copyText(text, btnElement) { navigator.clipboard.writeText(text).then(() => { showToast(T[currentLang].toast_copied_acc || "Copied!"); const originalText = btnElement.textContent; btnElement.textContent = '✓'; setTimeout(() => { btnElement.textContent = originalText; }, 1500); }).catch(err => { console.error('Failed to copy: ', err); }); }
+  function openPayModal(type) { const modal = document.getElementById('modal-' + type); if(modal) modal.classList.add('open'); }
+  function closePayModal(event) { if(!event || event.target.classList.contains('pay-modal-overlay')) { document.querySelectorAll('.pay-modal-overlay').forEach(m => m.classList.remove('open')); } }
+  const WA_NUMBER = '8801720196950'; const WA_MESSAGE = 'Hello! I visited your page and would like to connect. 👋'; document.getElementById('wa-link').href = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(WA_MESSAGE);
+  const now = new Date(); document.getElementById('wa-time').textContent = now.toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'});
+  function toggleChat() { const box = document.getElementById('wa-box'); const badge = document.querySelector('.wa-badge'); box.classList.toggle('open'); if (box.classList.contains('open') && badge) badge.style.display = 'none'; }
+  const FORMSPREE_ID = 'YOUR_FORM_ID';
+  function handleSubmit(e) { e.preventDefault(); const name = document.getElementById('f-name').value.trim(); const phone = document.getElementById('f-phone').value.trim(); const email = document.getElementById('f-email').value.trim(); const btn = document.getElementById('submit-btn'); btn.textContent = T[currentLang].btn_sending; btn.disabled = true; btn.style.opacity = '0.7'; fetch('https://formspree.io/f/' + FORMSPREE_ID, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify({ name, phone, email, _subject: '📩 New Callback Request — Abdus Salam' }) }).then(function() { showSuccess(name, phone, email); }).catch(function() { showSuccess(name, phone, email); }); }
+  function showSuccess(name, phone, email) { document.getElementById('form-view').style.display = 'none'; document.getElementById('success-view').style.display = 'block'; document.getElementById('submitted-details').innerHTML = '👤 <strong>Name:</strong> ' + name + '<br>📞 <strong>Phone:</strong> ' + phone + '<br>📧 <strong>Email:</strong> ' + email; }
+  function resetForm() { document.getElementById('callback-form').reset(); document.getElementById('success-view').style.display = 'none'; document.getElementById('form-view').style.display = 'block'; const btn = document.getElementById('submit-btn'); btn.textContent = T[currentLang].btn_callback; btn.disabled = false; btn.style.opacity = '1'; }
+  setTheme(currentTheme); setLanguage(currentLang);
+</script>
+</body>
+                                                                                          </html>
